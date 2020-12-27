@@ -1,0 +1,181 @@
+[1608910046.164][INFO]: Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 28499
+[1608910046.164][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1608910046.591][INFO]: [13b3ad58edf0b736923535ebe06e3b00] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\Denis\\Desktop\\Java\\Java projects\\AppiumAndroidTesting\\build\\downloads\\1608910043913_12896_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\Denis\\Desktop\\Java\\Java projects\\AppiumAndroidTesting\\build\\downloads\\1608910043913_12896_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1608910046.593][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\Denis\\Desktop\\Java\\Java projects\\AppiumAndroidTesting\\build\\downloads\\1608910043913_12896_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1608910046.597][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1608910046.600][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Denis\AppData\Local\Temp\scoped_dir11072_1115841382" data:,
+[1608910047.068][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1608910049.124][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1608910051.167][INFO]: [13b3ad58edf0b736923535ebe06e3b00] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.88",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761})",
+         "userDataDir": "C:\\Users\\Denis\\AppData\\Local\\Temp\\scoped_dir11072_1115841382"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:59364"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "13b3ad58edf0b736923535ebe06e3b00"
+}
+[1608910051.241][INFO]: [13b3ad58edf0b736923535ebe06e3b00] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1608910051.241][INFO]: Waiting for pending navigations...
+[1608910051.243][INFO]: Done waiting for pending navigations. Status: ok
+[1608910051.349][INFO]: Waiting for pending navigations...
+[1608910051.349][INFO]: Done waiting for pending navigations. Status: ok
+[1608910051.349][INFO]: [13b3ad58edf0b736923535ebe06e3b00] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 10,
+   "y": 10
+}
+[1608910051.364][INFO]: [13b3ad58edf0b736923535ebe06e3b00] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1608910051.364][INFO]: [13b3ad58edf0b736923535ebe06e3b00] RESPONSE SetTimeouts
+[1608910051.380][INFO]: [13b3ad58edf0b736923535ebe06e3b00] COMMAND Navigate {
+   "url": "http://localhost:8080"
+}
+[1608910051.380][INFO]: Waiting for pending navigations...
+[1608910051.380][INFO]: Done waiting for pending navigations. Status: ok
+[1608910055.491][INFO]: Waiting for pending navigations...
+[1608910055.533][INFO]: Done waiting for pending navigations. Status: ok
+[1608910055.703][INFO]: Waiting for pending navigations...
+[1608910055.708][INFO]: Done waiting for pending navigations. Status: ok
+[1608910059.644][INFO]: Waiting for pending navigations...
+[1608910059.648][INFO]: Done waiting for pending navigations. Status: ok
+[1608910059.648][INFO]: [13b3ad58edf0b736923535ebe06e3b00] RESPONSE Navigate ERROR unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=87.0.4280.88)
+[1608910059.668][INFO]: [13b3ad58edf0b736923535ebe06e3b00] COMMAND Quit {
+
+}
+[1608910059.685][INFO]: [13b3ad58edf0b736923535ebe06e3b00] RESPONSE Quit
