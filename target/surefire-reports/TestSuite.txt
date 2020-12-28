@@ -1,15 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 19.574 s <<< FAILURE! - in TestSuite
-closePrivacyPopUp(org.example.MainScreenTest)  Time elapsed: 19.489 s  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 72.807 s <<< FAILURE! - in TestSuite
+verifyOfSumming(org.example.MainScreenTest)  Time elapsed: 11.22 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
-Expected: be visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.html
-Timeout: 4 s.
+Element not found {By.id: com.miui.calculator:id/btn_1_s}
+Expected: visible
+Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.png
+Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.html
+Timeout: 10 s.
 Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
+	at org.example.MainScreenTest.verifyOfSumming(MainScreenTest.java:41)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -17,6 +18,27 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-JEUNI11', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
+Session ID: efbe2b2d-6d74-4772-bc21-c8fab9b5f02b
+*** Element info: {Using=id, value=com.miui.calculator:id/btn_1_s}
+	at org.example.MainScreenTest.verifyOfSumming(MainScreenTest.java:41)
+
+verifyTopNavigation(org.example.MainScreenTest)  Time elapsed: 11.221 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.id: com.miui.calculator:id/iv_tab_life}
+Expected: visible
+Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.png
+Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
+	at org.example.MainScreenTest.verifyTopNavigation(MainScreenTest.java:61)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JEUNI11', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: efbe2b2d-6d74-4772-bc21-c8fab9b5f02b
+*** Element info: {Using=id, value=com.miui.calculator:id/iv_tab_life}
+	at org.example.MainScreenTest.verifyTopNavigation(MainScreenTest.java:61)
 

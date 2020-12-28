@@ -9,15 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">10 985</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">72 537</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">org.example.MainScreenTest</td><td><a href="#m0">closePrivacyPopUp</a></td><td rowspan="1">1609094287218</td><td rowspan="1">10964</td></tr><tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">org.example.MainScreenTest</td><td><a href="#m1">closePrivacyPopUp</a></td><td rowspan="1">1609094298191</td><td rowspan="1">-1609094298191</td></tr><tr class="skippedeven"><td><a href="#m2">closeWebDriver</a></td><td rowspan="2">1609094298191</td><td rowspan="2">-1609094298191</td></tr><tr class="skippedeven"><td><a href="#m3">closeWebDriver</a></td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">org.example.MainScreenTest</td><td><a href="#m4">verifyOfSumming</a></td><td rowspan="1">1609094298190</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">verifyTopNavigation</a></td><td rowspan="1">1609094298191</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">org.example.MainScreenTest</td><td><a href="#m0">verifyOfSumming</a></td><td rowspan="1">1609189553248</td><td rowspan="1">11212</td></tr><tr class="failedeven"><td><a href="#m1">verifyTopNavigation</a></td><td rowspan="1">1609189572699</td><td rowspan="1">11219</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.example.MainScreenTest</td><td><a href="#m2">verifyOfSubtracting</a></td><td rowspan="1">1609189532237</td><td rowspan="1">12674</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">org.example.MainScreenTest#closePrivacyPopUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
-Expected: be visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.html
-Timeout: 4 s.
+<h2>Surefire test</h2><h3 id="m0">org.example.MainScreenTest#verifyOfSumming</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.id: com.miui.calculator:id/btn_1_s}
+Expected: visible
+Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.png
+Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.html
+Timeout: 10 s.
 Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)
@@ -27,8 +27,8 @@ Caused by: NoSuchElementException: An element could not be located on the page u
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:153)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:124)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:76)
-	at com.sun.proxy.$Proxy7.should(Unknown Source)
-	at org.example.TestBase.closePrivacyPopUp(TestBase.java:29)
+	at com.sun.proxy.$Proxy8.waitUntil(Unknown Source)
+	at org.example.MainScreenTest.verifyOfSumming(MainScreenTest.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -36,8 +36,8 @@ Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, tim
 System info: host: &apos;DESKTOP-JEUNI11&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
+Session ID: efbe2b2d-6d74-4772-bc21-c8fab9b5f02b
+*** Element info: {Using=id, value=com.miui.calculator:id/btn_1_s}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -51,11 +51,11 @@ Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
@@ -64,16 +64,13 @@ Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
-	... 44 more
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.example.MainScreenTest#closePrivacyPopUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">org.example.MainScreenTest#closeWebDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">org.example.MainScreenTest#closeWebDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">org.example.MainScreenTest#verifyOfSumming</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
-Expected: be visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.html
-Timeout: 4 s.
+	... 40 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.example.MainScreenTest#verifyTopNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.id: com.miui.calculator:id/iv_tab_life}
+Expected: visible
+Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.png
+Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.html
+Timeout: 10 s.
 Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)
@@ -83,8 +80,8 @@ Caused by: NoSuchElementException: An element could not be located on the page u
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:153)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:124)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:76)
-	at com.sun.proxy.$Proxy7.should(Unknown Source)
-	at org.example.TestBase.closePrivacyPopUp(TestBase.java:29)
+	at com.sun.proxy.$Proxy8.waitUntil(Unknown Source)
+	at org.example.MainScreenTest.verifyTopNavigation(MainScreenTest.java:61)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -92,8 +89,8 @@ Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, tim
 System info: host: &apos;DESKTOP-JEUNI11&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
+Session ID: efbe2b2d-6d74-4772-bc21-c8fab9b5f02b
+*** Element info: {Using=id, value=com.miui.calculator:id/iv_tab_life}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -107,11 +104,11 @@ Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
@@ -120,60 +117,8 @@ Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
-	... 44 more
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">org.example.MainScreenTest#verifyTopNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
-Expected: be visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609094297285.0.html
-Timeout: 4 s.
-Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
-	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)
-	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)
-	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
-	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:153)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:124)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:76)
-	at com.sun.proxy.$Proxy7.should(Unknown Source)
-	at org.example.TestBase.closePrivacyPopUp(TestBase.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-JEUNI11&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 0429bcd8-2255-40b9-ba16-31a6024c1b1b
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)
-	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)
-	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
-	... 44 more
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	... 40 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.example.MainScreenTest#verifyOfSubtracting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

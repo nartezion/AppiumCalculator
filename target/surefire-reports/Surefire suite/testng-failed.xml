@@ -5,11 +5,12 @@
     <classes>
       <class name="org.example.MainScreenTest">
         <methods>
+          <include name="initDriver"/>
           <include name="verifyTopNavigation"/>
           <include name="closePrivacyPopUp"/>
-          <include name="initTestSuite"/>
-          <include name="verifyOfSumming"/>
           <include name="closeWebDriver"/>
+          <include name="quitDriver"/>
+          <include name="verifyOfSumming"/>
         </methods>
       </class> <!-- org.example.MainScreenTest -->
     </classes>
