@@ -25,7 +25,6 @@ public class MainScreenTest extends TestBase {
                 "LinearLayout/android.widget.Button[2]")).click();
         $(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"))
                 .waitUntil(Condition.not(Condition.visible),4000L);
-
     }
 
     @AfterMethod

@@ -1,255 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="1" failed="2" skipped="0">
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-28T23:05:25 EET" name="Surefire suite" finished-at="2020-12-28T23:06:38 EET" duration-ms="72537">
+  <suite name="Surefire suite" duration-ms="159106" started-at="2020-12-29T13:18:53 EET" finished-at="2020-12-29T13:21:33 EET">
     <groups>
     </groups>
-    <test started-at="2020-12-28T23:05:25 EET" name="Surefire test" finished-at="2020-12-28T23:06:38 EET" duration-ms="72537">
+    <test name="Surefire test" duration-ms="159106" started-at="2020-12-29T13:18:53 EET" finished-at="2020-12-29T13:21:33 EET">
       <class name="org.example.MainScreenTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:05:25 EET" name="initDriver" finished-at="2020-12-28T23:05:31 EET" duration-ms="5466" status="PASS">
+        <test-method status="PASS" signature="initDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="initDriver" is-config="true" duration-ms="16771" started-at="2020-12-29T13:18:53 EET" finished-at="2020-12-29T13:19:10 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method is-config="true" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:05:31 EET" name="closePrivacyPopUp" finished-at="2020-12-28T23:05:32 EET" duration-ms="988" status="PASS">
+        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closePrivacyPopUp" is-config="true" duration-ms="2818" started-at="2020-12-29T13:19:10 EET" finished-at="2020-12-29T13:19:13 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePrivacyPopUp -->
-        <test-method signature="verifyOfSubtracting()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:05:32 EET" name="verifyOfSubtracting" finished-at="2020-12-28T23:05:44 EET" duration-ms="12674" status="PASS">
+        <test-method status="PASS" signature="verifyOfSubtracting()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="verifyOfSubtracting" duration-ms="11760" started-at="2020-12-29T13:19:13 EET" finished-at="2020-12-29T13:19:25 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOfSubtracting -->
-        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:05:44 EET" name="closeWebDriver" finished-at="2020-12-28T23:05:53 EET" duration-ms="8089" status="PASS">
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closeWebDriver" is-config="true" duration-ms="24476" started-at="2020-12-29T13:19:25 EET" finished-at="2020-12-29T13:19:49 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebDriver -->
-        <test-method is-config="true" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:05:53 EET" name="closePrivacyPopUp" finished-at="2020-12-28T23:05:53 EET" duration-ms="247" status="PASS">
+        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closePrivacyPopUp" is-config="true" duration-ms="1143" started-at="2020-12-29T13:19:49 EET" finished-at="2020-12-29T13:19:50 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePrivacyPopUp -->
-        <test-method signature="verifyOfSumming()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:05:53 EET" name="verifyOfSumming" finished-at="2020-12-28T23:06:04 EET" duration-ms="11212" status="FAIL">
-          <exception class="com.codeborne.selenide.ex.ElementNotFound">
-            <message>
-              <![CDATA[Element not found {By.id: com.miui.calculator:id/btn_1_s}
-Expected: visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.html
-Timeout: 10 s.
-Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[Element not found {By.id: com.miui.calculator:id/btn_1_s}
-Expected: visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189563330.0.html
-Timeout: 10 s.
-Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
-at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)
-at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)
-at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)
-at com.codeborne.selenide.commands.Should.execute(Should.java:30)
-at com.codeborne.selenide.commands.Should.execute(Should.java:14)
-at com.codeborne.selenide.commands.Commands.execute(Commands.java:153)
-at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:124)
-at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:76)
-at com.sun.proxy.$Proxy8.waitUntil(Unknown Source)
-at org.example.MainScreenTest.verifyOfSumming(MainScreenTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JEUNI11', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: efbe2b2d-6d74-4772-bc21-c8fab9b5f02b
-*** Element info: {Using=id, value=com.miui.calculator:id/btn_1_s}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)
-at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)
-at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)
-at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
-... 40 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+        <test-method status="PASS" signature="verifyOfSumming()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="verifyOfSumming" duration-ms="11375" started-at="2020-12-29T13:19:50 EET" finished-at="2020-12-29T13:20:02 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOfSumming -->
-        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:06:04 EET" name="closeWebDriver" finished-at="2020-12-28T23:06:12 EET" duration-ms="8006" status="PASS">
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closeWebDriver" is-config="true" duration-ms="23589" started-at="2020-12-29T13:20:02 EET" finished-at="2020-12-29T13:20:25 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebDriver -->
-        <test-method is-config="true" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:06:12 EET" name="closePrivacyPopUp" finished-at="2020-12-28T23:06:12 EET" duration-ms="226" status="PASS">
+        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closePrivacyPopUp" is-config="true" duration-ms="1225" started-at="2020-12-29T13:20:25 EET" finished-at="2020-12-29T13:20:27 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePrivacyPopUp -->
-        <test-method signature="verifyTopNavigation()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:06:12 EET" name="verifyTopNavigation" finished-at="2020-12-28T23:06:23 EET" duration-ms="11219" status="FAIL">
-          <exception class="com.codeborne.selenide.ex.ElementNotFound">
-            <message>
-              <![CDATA[Element not found {By.id: com.miui.calculator:id/iv_tab_life}
-Expected: visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.html
-Timeout: 10 s.
-Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[Element not found {By.id: com.miui.calculator:id/iv_tab_life}
-Expected: visible
-Screenshot: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.png
-Page source: file:/C:/Users/Denis/Desktop/Java/Java%20projects/AppiumAndroidTesting/build/reports/tests/1609189582797.1.html
-Timeout: 10 s.
-Caused by: NoSuchElementException: An element could not be located on the page using the given search parameters.
-at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)
-at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)
-at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)
-at com.codeborne.selenide.commands.Should.execute(Should.java:30)
-at com.codeborne.selenide.commands.Should.execute(Should.java:14)
-at com.codeborne.selenide.commands.Commands.execute(Commands.java:153)
-at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:124)
-at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:76)
-at com.sun.proxy.$Proxy8.waitUntil(Unknown Source)
-at org.example.MainScreenTest.verifyTopNavigation(MainScreenTest.java:61)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JEUNI11', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\calculator.apk, appPackage: com.miui.calculator, automationName: Appium, databaseEnabled: false, desired: {app: D:\calculator.apk, automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: efbe2b2d-6d74-4772-bc21-c8fab9b5f02b
-*** Element info: {Using=id, value=com.miui.calculator:id/iv_tab_life}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)
-at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)
-at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)
-at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
-... 40 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+        <test-method status="PASS" signature="verifyTopNavigation()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="verifyTopNavigation" duration-ms="9449" started-at="2020-12-29T13:20:27 EET" finished-at="2020-12-29T13:20:36 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTopNavigation -->
-        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:06:23 EET" name="closeWebDriver" finished-at="2020-12-28T23:06:31 EET" duration-ms="7951" status="PASS">
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closeWebDriver" is-config="true" duration-ms="32979" started-at="2020-12-29T13:20:36 EET" finished-at="2020-12-29T13:21:09 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebDriver -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.example.MainScreenTest@34a3d150]" started-at="2020-12-28T23:06:31 EET" name="quitDriver" finished-at="2020-12-28T23:06:38 EET" duration-ms="6433" status="PASS">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="quitDriver" is-config="true" duration-ms="23462" started-at="2020-12-29T13:21:09 EET" finished-at="2020-12-29T13:21:33 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
