@@ -2,19 +2,26 @@ package org.example;
 
 import com.codeborne.selenide.WebDriverRunner;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 
 public class TestBase {
-    @BeforeTest
+
+    public static WebDriver androidDriver;
+
+    @BeforeSuite
     public void initDriver() throws MalformedURLException {
-        WebDriverRunner.setWebDriver(DesiredAppiumCapabilities.getAndroidDriver());
+        androidDriver = DesiredAppiumCapabilities.getAndroidDriver();
+        WebDriverRunner.setWebDriver(androidDriver);
     }
 
-    @AfterTest
+    @AfterSuite
     public void quitDriver() throws MalformedURLException {
-        ((AppiumDriver)DesiredAppiumCapabilities.getAndroidDriver()).quit();
+        androidDriver.quit();
     }
 }

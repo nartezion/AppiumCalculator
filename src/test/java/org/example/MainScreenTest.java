@@ -30,8 +30,8 @@ public class MainScreenTest extends TestBase {
     }
 
     @AfterMethod
-    public void closeWebDriver() throws MalformedURLException {
-        ((AppiumDriver)DesiredAppiumCapabilities.getAndroidDriver()).resetApp();
+    public void closeWebDriver() {
+        ((AppiumDriver)androidDriver).resetApp();
         $(By.id("com.miui.calculator:id/message"))
                 .should(Condition.be(Condition.visible));
     }
@@ -44,7 +44,6 @@ public class MainScreenTest extends TestBase {
 
         $(By.id("com.miui.calculator:id/btn_plus_s")).click();
         //Clicking +
-
 
         $(By.id("com.miui.calculator:id/btn_9_s")).click();
         //Clicking 9
