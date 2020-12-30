@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="159106" started-at="2020-12-29T13:18:53 EET" finished-at="2020-12-29T13:21:33 EET">
+  <suite name="Surefire suite" duration-ms="181471" started-at="2020-12-30T13:14:50 EET" finished-at="2020-12-30T13:17:51 EET">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="159106" started-at="2020-12-29T13:18:53 EET" finished-at="2020-12-29T13:21:33 EET">
+    <test name="Surefire test" duration-ms="181471" started-at="2020-12-30T13:14:50 EET" finished-at="2020-12-30T13:17:51 EET">
       <class name="org.example.MainScreenTest">
-        <test-method status="PASS" signature="initDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="initDriver" is-config="true" duration-ms="16771" started-at="2020-12-29T13:18:53 EET" finished-at="2020-12-29T13:19:10 EET">
+        <test-method status="PASS" signature="initDriver()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="initDriver" is-config="true" duration-ms="25500" started-at="2020-12-30T13:14:50 EET" finished-at="2020-12-30T13:15:16 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closePrivacyPopUp" is-config="true" duration-ms="2818" started-at="2020-12-29T13:19:10 EET" finished-at="2020-12-29T13:19:13 EET">
+        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="closePrivacyPopUp" is-config="true" duration-ms="2180" started-at="2020-12-30T13:15:16 EET" finished-at="2020-12-30T13:15:18 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePrivacyPopUp -->
-        <test-method status="PASS" signature="verifyOfSubtracting()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="verifyOfSubtracting" duration-ms="11760" started-at="2020-12-29T13:19:13 EET" finished-at="2020-12-29T13:19:25 EET">
+        <test-method status="PASS" signature="verifyOfSubtracting()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="verifyOfSubtracting" duration-ms="10961" started-at="2020-12-30T13:15:18 EET" finished-at="2020-12-30T13:15:29 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOfSubtracting -->
-        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closeWebDriver" is-config="true" duration-ms="24476" started-at="2020-12-29T13:19:25 EET" finished-at="2020-12-29T13:19:49 EET">
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="closeWebDriver" is-config="true" duration-ms="30127" started-at="2020-12-30T13:15:29 EET" finished-at="2020-12-30T13:15:59 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebDriver -->
-        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closePrivacyPopUp" is-config="true" duration-ms="1143" started-at="2020-12-29T13:19:49 EET" finished-at="2020-12-29T13:19:50 EET">
+        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="closePrivacyPopUp" is-config="true" duration-ms="523" started-at="2020-12-30T13:15:59 EET" finished-at="2020-12-30T13:16:00 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePrivacyPopUp -->
-        <test-method status="PASS" signature="verifyOfSumming()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="verifyOfSumming" duration-ms="11375" started-at="2020-12-29T13:19:50 EET" finished-at="2020-12-29T13:20:02 EET">
+        <test-method status="PASS" signature="verifyOfSumming()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="verifyOfSumming" duration-ms="12374" started-at="2020-12-30T13:16:00 EET" finished-at="2020-12-30T13:16:12 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOfSumming -->
-        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closeWebDriver" is-config="true" duration-ms="23589" started-at="2020-12-29T13:20:02 EET" finished-at="2020-12-29T13:20:25 EET">
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="closeWebDriver" is-config="true" duration-ms="27770" started-at="2020-12-30T13:16:12 EET" finished-at="2020-12-30T13:16:40 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebDriver -->
-        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closePrivacyPopUp" is-config="true" duration-ms="1225" started-at="2020-12-29T13:20:25 EET" finished-at="2020-12-29T13:20:27 EET">
+        <test-method status="PASS" signature="closePrivacyPopUp()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="closePrivacyPopUp" is-config="true" duration-ms="806" started-at="2020-12-30T13:16:40 EET" finished-at="2020-12-30T13:16:40 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePrivacyPopUp -->
-        <test-method status="PASS" signature="verifyTopNavigation()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="verifyTopNavigation" duration-ms="9449" started-at="2020-12-29T13:20:27 EET" finished-at="2020-12-29T13:20:36 EET">
+        <test-method status="PASS" signature="verifyTopNavigation()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="verifyTopNavigation" duration-ms="10867" started-at="2020-12-30T13:16:40 EET" finished-at="2020-12-30T13:16:51 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTopNavigation -->
-        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="closeWebDriver" is-config="true" duration-ms="32979" started-at="2020-12-29T13:20:36 EET" finished-at="2020-12-29T13:21:09 EET">
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="closeWebDriver" is-config="true" duration-ms="28312" started-at="2020-12-30T13:16:51 EET" finished-at="2020-12-30T13:17:20 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebDriver -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:org.example.MainScreenTest@1e127982]" name="quitDriver" is-config="true" duration-ms="23462" started-at="2020-12-29T13:21:09 EET" finished-at="2020-12-29T13:21:33 EET">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:org.example.MainScreenTest@544fe44c]" name="quitDriver" is-config="true" duration-ms="31826" started-at="2020-12-30T13:17:20 EET" finished-at="2020-12-30T13:17:51 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

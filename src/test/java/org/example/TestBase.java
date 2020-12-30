@@ -15,6 +15,6 @@ public class TestBase {
 
     @AfterTest
     public void quitDriver() throws MalformedURLException {
-        ((AppiumDriver)DesiredAppiumCapabilities.getAndroidDriver()).closeApp();
+        ((AppiumDriver)DesiredAppiumCapabilities.getAndroidDriver()).quit();
     }
 }

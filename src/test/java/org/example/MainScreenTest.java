@@ -4,6 +4,7 @@ package org.example;
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriverException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,21 +18,22 @@ import static com.codeborne.selenide.Selenide.$;
 public class MainScreenTest extends TestBase {
 
     @BeforeMethod
-    public void closePrivacyPopUp() {
-        $(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"))
-                .should(Condition.be(Condition.visible));
-        $(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget." +
-                "FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget." +
-                "LinearLayout/android.widget.Button[2]")).click();
-        $(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"))
-                .waitUntil(Condition.not(Condition.visible),4000L);
+    public void closePrivacyPopUp() throws MalformedURLException {
+        try {
+            $(By.id("com.miui.calculator:id/message"))
+                    .should(Condition.be(Condition.visible));
+            $(By.id("android:id/button1")).click();
+        } catch(WebDriverException stateEx){
+            quitDriver();
+            Assert.fail("Pop-up is not closed");
+        }
     }
 
     @AfterMethod
     public void closeWebDriver() throws MalformedURLException {
         ((AppiumDriver)DesiredAppiumCapabilities.getAndroidDriver()).resetApp();
-        $(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"))
-                .waitUntil(Condition.visible,5000L);
+        $(By.id("com.miui.calculator:id/message"))
+                .should(Condition.be(Condition.visible));
     }
 
     @Test
